@@ -47,6 +47,7 @@ const Login = ({ navigation }: { navigation: any }) => {
       const user = await loginUser({
         variables: { loginData: { email: email.toLowerCase(), password } },
       });
+      console.log("token", user?.data?.login);
 
       await SecureStore.setItemAsync(
         "userToken",

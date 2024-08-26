@@ -1,13 +1,13 @@
-import { Control } from "react-hook-form";
-import { motion } from "framer-motion";
 import { Elements } from "@stripe/react-stripe-js";
 import { loadStripe } from "@stripe/stripe-js";
+import { motion } from "framer-motion";
+import { Control } from "react-hook-form";
 
+import { useEffect, useState } from "react";
 import EarthMoneyImg from "../../assets/images/register.png";
 import CustomFormField from "../../components/CustomFormField";
-import StepBackButton from "../../components/StepBackButton";
-import { useEffect, useState } from "react";
 import PaymentForm from "../../components/PaymentForm";
+import StepBackButton from "../../components/StepBackButton";
 
 type StepThreeProps = {
   control: Control<

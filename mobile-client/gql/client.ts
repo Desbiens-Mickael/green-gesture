@@ -2,6 +2,7 @@ import { ApolloClient, createHttpLink, InMemoryCache } from "@apollo/client";
 import Constants from "expo-constants";
 
 const env = Constants.expoConfig?.extra || {};
+console.log({ env });
 
 import { setContext } from "@apollo/client/link/context";
 import * as SecureStore from "expo-secure-store";

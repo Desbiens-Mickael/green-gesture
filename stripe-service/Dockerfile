@@ -1,4 +1,4 @@
-FROM node:16.19-alpine
+FROM node:18.12-alpine
 
 RUN npm i -g node-pre-gyp
 RUN npm i -g pnpm

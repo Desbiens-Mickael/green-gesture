@@ -1,4 +1,4 @@
-FROM node:16.19-alpine
+FROM node:18.12-alpine
 
 RUN apk --no-cache add curl
 RUN apk add make g++ python3 git

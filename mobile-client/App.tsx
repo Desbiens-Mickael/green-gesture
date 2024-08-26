@@ -30,8 +30,8 @@ const DrawerComponent = ({ navigation }: { navigation: any }) => {
             label="Déconnexion"
             onPress={async () => {
               try {
-                await logout();
                 await SecureStore.deleteItemAsync("userToken");
+                await logout();
                 navigation.navigate("Login");
               } catch (err) {
                 console.error("err", err);
