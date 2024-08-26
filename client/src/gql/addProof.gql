@@ -1,0 +1,3 @@
+mutation AddProof($data: UserEcoActionInputAddProof!) {
+  addProof(data: $data)
+}

@@ -1,0 +1,12 @@
+query GetCommentsForGroup($groupId: Float!) {
+  getCommentsForGroup(groupId: $groupId) {
+    id
+    createdAt
+    message
+    author {
+      id
+      firstName
+      lastName
+    }
+  }
+}

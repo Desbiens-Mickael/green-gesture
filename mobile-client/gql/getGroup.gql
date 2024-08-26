@@ -1,0 +1,38 @@
+query GetGroup($groupId: Float!) {
+  getGroup(groupId: $groupId) {
+    id
+    name
+    challengeName
+    startDate
+    endDate
+    author {
+      id
+      firstName
+      lastName
+    }
+    users {
+      id
+      firstName
+      lastName
+    }
+    ecoActions {
+      id
+      name
+      description
+      likes
+      validations {
+        points
+        id
+      }
+    }
+    teams {
+      id
+      name
+      users {
+        id
+        firstName
+        lastName
+      }
+    }
+  }
+}

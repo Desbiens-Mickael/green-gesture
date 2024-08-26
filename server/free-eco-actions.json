@@ -1,0 +1,182 @@
+[
+  {
+    "name": "Chasse au trésor verte",
+    "description": "Organisez une chasse au trésor en plein air où les participants doivent trouver des objets liés à la nature et à l'environnement. Chaque objet trouvé rapporte des points!",
+    "validations": [
+      {
+        "points": 10
+      },
+      {
+        "points": 5
+      },
+      {
+        "points": 3
+      },
+      {
+        "points": 2
+      }
+    ]
+  },
+  {
+    "name": "Défi du sac à dos léger",
+    "description": "Voyagez léger en emportant seulement ce dont vous avez besoin pour la journée. Moins de poids signifie une empreinte carbone réduite!",
+    "validations": [
+      {
+        "points": 8
+      },
+      {
+        "points": 4
+      },
+      {
+        "points": 2
+      },
+      {
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Journée sans plastique",
+    "description": "Essayez de passer une journée entière sans utiliser de plastique jetable. Optez pour des alternatives réutilisables!",
+    "validations": [
+      {
+        "points": 6
+      },
+      {
+        "points": 3
+      },
+      {
+        "points": 2
+      },
+      {
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Défi du repas végétarien",
+    "description": "Privilégiez les repas végétariens pendant une journée complète. Découvrez de nouvelles recettes et réduisez votre empreinte carbone!",
+    "validations": [
+      {
+        "points": 9
+      },
+      {
+        "points": 4
+      },
+      {
+        "points": 3
+      },
+      {
+        "points": 2
+      }
+    ]
+  },
+  {
+    "name": "Journée sans voiture",
+    "description": "Laissez la voiture à la maison et optez pour la marche, le vélo ou les transports en commun. Réduisez les émissions de CO2!",
+    "validations": [
+      {
+        "points": 10
+      },
+      {
+        "points": 6
+      },
+      {
+        "points": 4
+      },
+      {
+        "points": 3
+      }
+    ]
+  },
+  {
+    "name": "Défi de la douche courte",
+    "description": "Prenez une douche de 5 minutes ou moins pour économiser l'eau. Soyez créatif avec des minuteries ludiques!",
+    "validations": [
+      {
+        "points": 5
+      },
+      {
+        "points": 3
+      },
+      {
+        "points": 2
+      },
+      {
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Journée de ramassage des déchets",
+    "description": "Organisez une journée pour ramasser les déchets dans votre quartier ou votre parc local. Contribuez à un environnement plus propre!",
+    "validations": [
+      {
+        "points": 7
+      },
+      {
+        "points": 4
+      },
+      {
+        "points": 3
+      },
+      {
+        "points": 2
+      }
+    ]
+  },
+  {
+    "name": "Défi du pique-nique zéro déchet",
+    "description": "Organisez un pique-nique en utilisant uniquement des contenants réutilisables et évitez les déchets plastiques. Profitez de la nature sans la pollution!",
+    "validations": [
+      {
+        "points": 8
+      },
+      {
+        "points": 5
+      },
+      {
+        "points": 3
+      },
+      {
+        "points": 2
+      }
+    ]
+  },
+  {
+    "name": "Défi des escaliers",
+    "description": "Évitez les ascenseurs et les escalators pendant une journée. Optez pour les escaliers et faites un peu d'exercice!",
+    "validations": [
+      {
+        "points": 6
+      },
+      {
+        "points": 4
+      },
+      {
+        "points": 3
+      },
+      {
+        "points": 1
+      }
+    ]
+  },
+  {
+    "name": "Journée de la créativité recyclée",
+    "description": "Utilisez des matériaux recyclés pour créer des œuvres d'art ou des objets fonctionnels. Laissez libre cours à votre créativité éco-friendly!",
+    "validations": [
+      {
+        "points": 9
+      },
+      {
+        "points": 5
+      },
+      {
+        "points": 4
+      },
+      {
+        "points": 2
+      }
+    ]
+  }
+]

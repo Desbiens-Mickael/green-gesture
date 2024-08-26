@@ -1,0 +1,3 @@
+mutation DeleteLike($ecoActionId: Int!) {
+  deleteLike(ecoActionId: $ecoActionId)
+}

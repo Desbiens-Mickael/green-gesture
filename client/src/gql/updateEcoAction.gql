@@ -1,0 +1,14 @@
+mutation UpdateEcoAction(
+  $data: EcoActionInputCreation!
+  $updateEcoActionId: Int!
+) {
+  updateEcoAction(data: $data, id: $updateEcoActionId) {
+    id
+    name
+    description
+    validations {
+      id
+      points
+    }
+  }
+}

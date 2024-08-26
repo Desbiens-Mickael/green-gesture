@@ -1,0 +1,10 @@
+query GetEcoActionbyId($EcoActionId: Int!) {
+  getEcoActionbyId(id: $EcoActionId) {
+    name
+    description
+    validations {
+      id
+      points
+    }
+  }
+}

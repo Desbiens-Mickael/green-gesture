@@ -1,0 +1,6 @@
+query GetMaxValidationPoints($ecoActionId: Int!) {
+  getMaxValidationPoints(ecoActionId: $ecoActionId) {
+    id
+    points
+  }
+}

@@ -1,0 +1,10 @@
+query GetUserEcoActionsByGroupId($groupId: Int!) {
+  getUserEcoActionsByGroupId(groupId: $groupId) {
+    id
+    groupId
+    points
+    user {
+      id
+    }
+  }
+}

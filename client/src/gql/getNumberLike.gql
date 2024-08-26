@@ -1,0 +1,3 @@
+query getNumberLikes($ecoActionId: Int!) {
+  getNumberLikes(ecoActionId: $ecoActionId)
+}

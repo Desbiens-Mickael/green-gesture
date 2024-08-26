@@ -1,0 +1,6 @@
+query GetValidationsByEcoAction($ecoActionId: Int!) {
+  getValidationsByEcoAction(ecoActionId: $ecoActionId) {
+    id
+    points
+  }
+}

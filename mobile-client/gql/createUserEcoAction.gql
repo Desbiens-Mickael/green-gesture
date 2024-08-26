@@ -1,0 +1,3 @@
+mutation CreateUserEcoAction($data: UserEcoActionInputAddPoints!) {
+  createUserEcoAction(data: $data)
+}

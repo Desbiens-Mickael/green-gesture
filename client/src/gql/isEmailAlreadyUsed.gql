@@ -1,0 +1,3 @@
+query IsEmailAlreadyUsed($email: String!) {
+  isEmailAlreadyUsed(email: $email)
+}

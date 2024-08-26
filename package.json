@@ -1,0 +1,33 @@
+{
+  "name": "green-gesture",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "integration-tests": "docker compose -f docker-compose.integration-tests.yml up --build --exit-code-from testrunner",
+    "integration-tests:backend-only": "docker compose -f docker-compose.integration-tests.yml up testDB backend",
+    "e2e-tests": "cross-env VITE_GRAPHQL_API_URL=http://host.docker.internal:4000 docker compose -f docker-compose.e2e-tests.yml up --build --exit-code-from testrunner --remove-orphans",
+    "e2e-tests:app-only": "docker compose -f docker-compose.e2e-tests.yml up testDB backend client --build   --remove-orphans",
+    "start": "docker compose -f docker-compose.yml up --build",
+    "start:prod": "docker compose -f docker-compose.production.yml pull && docker compose -f docker-compose.production.yml --env-file .env.production up",
+    "start:staging": "docker compose -f docker-compose.staging.yml pull && docker compose -f docker-compose.staging.yml --env-file .env.staging up",
+    "publish:server": "cd server && docker build -f Dockerfile.production . -t mickael01/green-gesture-server:latest && docker push mickael01/green-gesture-server:latest && cd ..",
+    "publish-staging:server": "cd server && docker build -f Dockerfile.production . -t mickael01/green-gesture-server:staging && docker push mickael01/green-gesture-server:staging && cd ..",
+    "publish:client": "cd client && docker build -f Dockerfile.production . -t mickael01/green-gesture-client:latest && docker push mickael01/green-gesture-client:latest && cd ..",
+    "publish-staging:client": "cd client && docker build -f Dockerfile.production . -t mickael01/green-gesture-client:staging && docker push mickael01/green-gesture-client:staging && cd ..",
+    "publish:stripe-service": "cd stripe-service && docker build -f Dockerfile.production . -t mickael01/green-gesture-microservice-stripe:latest && docker push mickael01/green-gesture-microservice-stripe:latest && cd ..",
+    "publish:discord-bot": "cd discord-bot && docker build -f Dockerfile . -t mickael01/discord-bot && docker push mickael01/discord-bot && cd .."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WildCodeSchool/2211-wns-neumann-green-gesture"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WildCodeSchool/2211-wns-neumann-green-gesture/issues"
+  },
+  "homepage": "https://github.com/WildCodeSchool/2211-wns-neumann-green-gesture#readme",
+  "devDependencies": {
+    "cross-env": "^7.0.3"
+  }
+}

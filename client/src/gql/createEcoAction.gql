@@ -1,0 +1,16 @@
+mutation CreateEcoAction($data: EcoActionInputCreation!) {
+  createEcoAction(data: $data) {
+    id
+    name
+    description
+    author {
+      id
+      firstName
+      lastName
+    }
+    validations {
+      id
+      points
+    }
+  }
+}

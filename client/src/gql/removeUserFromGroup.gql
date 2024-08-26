@@ -1,0 +1,17 @@
+mutation RemoveUserFromGroup($data: GroupInputAddOneUser!) {
+  removeUserFromGroup(data: $data) {
+    teams {
+      id
+      users {
+        id
+        firstName
+        lastName
+      }
+    }
+    users {
+      id
+      firstName
+      lastName
+    }
+  }
+}

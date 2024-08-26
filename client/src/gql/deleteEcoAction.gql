@@ -1,0 +1,3 @@
+mutation DeleteEcoAction($ecoActionId: Int!) {
+  deleteEcoAction(id: $ecoActionId)
+}

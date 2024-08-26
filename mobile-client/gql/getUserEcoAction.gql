@@ -1,0 +1,13 @@
+query GetUserEcoAction($groupId: Int!, $ecoActionId: Int!) {
+  getUserEcoAction(groupId: $groupId, ecoActionId: $ecoActionId) {
+    id
+    proof
+    points
+    groupId
+    ecoAction {
+      name
+      description
+      likes
+    }
+  }
+}

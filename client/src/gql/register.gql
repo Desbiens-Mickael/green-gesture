@@ -1,0 +1,8 @@
+mutation CreateUser($data: UserInputSubscribe!) {
+  createUser(data: $data) {
+    email
+    firstName
+    lastName
+    password
+  }
+}

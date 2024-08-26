@@ -1,0 +1,240 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-sans: "Montserrat", "Inter", sans-serif;
+
+    --dark-green: #224820;
+    --medium-green: #365c34;
+    --light-green: #c6ddac;
+    --grey-green: #dde2d2;
+    --white-green: #e8eede;
+    --main-grey: #e4e4e4;
+    --accent-orange: #f69503;
+    --accent-blue: #0075ef;
+    --danger: #cc0000;
+
+    --background: 0 0% 98%;
+    --foreground: 117 28% 28%;
+
+    --primary: 117 38% 20%;
+    --primary-foreground: 83 32% 90%;
+
+    --secondary: 211 100% 47%;
+    --secondary-foreground: 83 32% 90%;
+
+    --muted: 0 0% 93%;
+    --muted-foreground: 0 0% 13%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 117 28% 28%;
+
+    --card: 88 42% 77%;
+    --card-foreground: 117 38% 20%;
+
+    --card-alt: 0, 0%, 89%;
+    --card-alt-foreground: 117 38% 20%;
+
+    --card-alt-2: 79, 22%, 85%;
+    --card-alt-2-foreground: 117 38% 20%;
+
+    --border: 117 28% 28%;
+    --input: 117 28% 28%;
+
+    --accent: 36 98% 49%;
+    --accent-foreground: 117 38% 20%;
+
+    --destructive: 0, 100%, 40%;
+    --destructive-foreground: 0 0% 99%;
+
+    --ring: 117 38% 20%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 224 71% 4%;
+    --foreground: 213 31% 91%;
+
+    --muted: 223 47% 11%;
+    --muted-foreground: 215.4 16.3% 56.9%;
+
+    --popover: 224 71% 4%;
+    --popover-foreground: 215 20.2% 65.1%;
+
+    --card: 224 71% 4%;
+    --card-foreground: 213 31% 91%;
+
+    --border: 216 34% 17%;
+    --input: 216 34% 17%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 1.2%;
+
+    --secondary: 222.2 47.4% 11.2%;
+    --secondary-foreground: 210 40% 98%;
+
+    --accent: 216 34% 17%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 210 40% 98%;
+
+    --ring: 216 34% 17%;
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html,
+  body,
+  #root {
+    @apply h-full;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* For IE, Edge and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  .my-locale-override {
+    --l10n-upload-file: "Envoyer le fichier";
+    --l10n-upload-files: "Envoyer les fichiers";
+    --l10n-choose-file: "Choisir le fichier";
+    --l10n-choose-files: "Choisir les fichiers";
+    --l10n-drop-files-here: "Déposez les fichiers ici";
+    --l10n-select-file-source: "Sélectionner le fichier source";
+    --l10n-selected: "Sélectionné";
+    --l10n-upload: "Envoyer";
+    --l10n-add-more: "Ajouter plus";
+    --l10n-cancel: "Annuler";
+    --l10n-clear: "Effacer";
+    --l10n-camera-shot: "Prise";
+    --l10n-upload-url: "Importer";
+    --l10n-upload-url-placeholder: "Coller le lien ici";
+    --l10n-edit-image: "Modifier l'image";
+    --l10n-edit-detail: "Détails";
+    --l10n-back: "Retour";
+    --l10n-done: "Terminé";
+    --l10n-ok: "Ok";
+    --l10n-remove-from-list: "Supprimer";
+    --l10n-no: "Non";
+    --l10n-yes: "Oui";
+    --l10n-confirm-your-action: "Confirmer votre action";
+    --l10n-are-you-sure: "Êtes-vous sûr?";
+    --l10n-selected-count: "Sélectionné:";
+    --l10n-upload-error: "Erreur de téléchargement";
+    --l10n-validation-error: "Erreur de validation";
+    --l10n-no-files: "Aucun fichier sélectionné";
+    --l10n-browse: "Parcourir";
+    --l10n-not-uploaded-yet: "Pas encore téléchargé...";
+    --l10n-file__one: "fichier";
+    --l10n-file__other: "fichiers";
+    --l10n-error__one: "erreur";
+    --l10n-error__other: "erreurs";
+    --l10n-header-uploading: "Téléchargement en cours de {{count}} {{plural:file(count)}}";
+    --l10n-header-failed: "{{count}} {{plural:error(count)}}";
+    --l10n-header-succeed: "{{count}} {{plural:file(count)}} téléchargé(s)";
+    --l10n-header-total: "{{count}} {{plural:file(count)}} sélectionné(s)";
+
+    --l10n-src-type-local: "Depuis l'appareil";
+    --l10n-src-type-from-url: "Depuis le lien";
+    --l10n-src-type-camera: "Appareil photo";
+    --l10n-src-type-draw: "Dessiner";
+    --l10n-src-type-facebook: "Facebook";
+    --l10n-src-type-dropbox: "Dropbox";
+    --l10n-src-type-gdrive: "Google Drive";
+    --l10n-src-type-gphotos: "Google Photos";
+    --l10n-src-type-instagram: "Instagram";
+    --l10n-src-type-flickr: "Flickr";
+    --l10n-src-type-vk: "VK";
+    --l10n-src-type-evernote: "Evernote";
+    --l10n-src-type-box: "Box";
+    --l10n-src-type-onedrive: "Onedrive";
+    --l10n-src-type-huddle: "Huddle";
+    --l10n-src-type-other: "Autre";
+
+    --l10n-src-type: var(--l10n-src-type-local);
+
+    --l10n-caption-from-url: "Importer depuis le lien";
+    --l10n-caption-camera: "Appareil photo";
+    --l10n-caption-draw: "Dessiner";
+    --l10n-caption-edit-file: "Modifier le fichier";
+
+    --l10n-file-no-name: "Aucun nom...";
+
+    --l10n-toggle-fullscreen: "Basculer en plein écran";
+    --l10n-toggle-guides: "Basculer les guides";
+    --l10n-rotate: "Faire pivoter";
+    --l10n-flip-vertical: "Retourner verticalement";
+    --l10n-flip-horizontal: "Retourner horizontalement";
+    --l10n-brightness: "Luminosité";
+    --l10n-contrast: "Contraste";
+    --l10n-saturation: "Saturation";
+    --l10n-resize: "Redimensionner l'image";
+    --l10n-crop: "Recadrer";
+    --l10n-select-color: "Sélectionner la couleur";
+    --l10n-text: "Texte";
+    --l10n-draw: "Dessiner";
+    --l10n-cancel-edit: "Annuler la modification";
+
+    --l10n-tab-view: "Aperçu";
+    --l10n-tab-details: "Détails";
+
+    --l10n-file-name: "Nom";
+    --l10n-file-size: "Taille";
+    --l10n-cdn-url: "URL CDN";
+    --l10n-file-size-unknown: "Inconnu";
+
+    --l10n-camera-permissions-denied: "Accès à l'appareil photo refusé";
+    --l10n-camera-permissions-prompt: "Veuillez autoriser l'accès à l'appareil photo";
+    --l10n-camera-permissions-request: "Demander l'accès";
+
+    --l10n-files-count-limit-error-title: "Dépassement de la limite du nombre de fichiers";
+    --l10n-files-count-limit-error-too-few: "Vous avez choisi {{total}} fichiers. Au moins {{min}} sont requis.";
+    --l10n-files-count-limit-error-too-many: "Vous avez choisi trop de fichiers. {{max}} est le maximum autorisé.";
+    --l10n-files-count-allowed: "Seulement {{count}} fichiers sont autorisés";
+
+    --l10n-files-max-size-limit-error: "Le fichier est trop volumineux. La taille maximale du fichier est de {{maxFileSize}}.";
+    --l10n-has-validation-errors: "Une erreur de validation de fichier est survenue. Veuillez vérifier vos fichiers avant le téléchargement.";
+    --l10n-images-only-accepted: "Seuls les fichiers image sont acceptés.";
+    --l10n-file-type-not-allowed: "Le téléchargement de ces types de fichiers n'est pas autorisé.";
+  }
+}
+
+@layer components {
+  .elevate-box {
+    @apply shadow-main p-4 rounded-2xl;
+  }
+
+  .eco-geste-drawer {
+    min-height: calc(100vh - 64px);
+  }
+}
+
+@layer components {
+  .elevate-box {
+    @apply shadow-main p-4 rounded-2xl;
+  }
+
+  .eco-geste-drawer {
+    min-height: calc(100vh - 64px);
+  }
+}

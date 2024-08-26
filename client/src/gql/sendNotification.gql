@@ -1,0 +1,5 @@
+mutation sendNotification($data: NotificationInputCreation!) {
+  sendNotification(data: $data) {
+    id
+  }
+}

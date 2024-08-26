@@ -1,0 +1,6 @@
+mutation updateNotificationStatus($data: NotificationInputStatusChange!) {
+  changeNotificationStatus(data: $data) {
+    id
+    status
+  }
+}

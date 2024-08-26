@@ -1,0 +1,11 @@
+query GetUserById($getUserById: Int!) {
+  getUserById(id: $getUserById) {
+    id
+    firstName
+    lastName
+    email
+    password
+    role
+    subscriptionType
+  }
+}

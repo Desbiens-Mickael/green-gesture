@@ -1,0 +1,18 @@
+query getNotifications {
+  getNotifications {
+    id
+    status
+    type
+    sender {
+      id
+      firstName
+      lastName
+    }
+    group {
+      id
+      challengeName
+      startDate
+      endDate
+    }
+  }
+}

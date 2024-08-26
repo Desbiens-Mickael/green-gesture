@@ -1,0 +1,6 @@
+query GetAllValidations {
+  getAllValidations {
+    id
+    points
+  }
+}

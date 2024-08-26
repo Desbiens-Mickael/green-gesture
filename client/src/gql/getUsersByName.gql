@@ -1,0 +1,7 @@
+query GetUsersByName($name: String!) {
+  getUsersByName(name: $name) {
+    id
+    firstName
+    lastName
+  }
+}

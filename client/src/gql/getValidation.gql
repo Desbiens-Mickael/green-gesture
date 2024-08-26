@@ -1,0 +1,6 @@
+query GetValidation($getValidationId: Int!) {
+  getValidation(id: $getValidationId) {
+    id
+    points
+  }
+}

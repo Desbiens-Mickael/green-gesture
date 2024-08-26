@@ -1,0 +1,8 @@
+query GetPopularFreeEcoActions {
+  getPopularFreeEcoActions {
+    id
+    name
+    likes
+    description
+  }
+}

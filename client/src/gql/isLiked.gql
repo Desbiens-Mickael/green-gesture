@@ -1,0 +1,3 @@
+query IsLiked($ecoActionId: Int!) {
+  isLiked(ecoActionId: $ecoActionId)
+}
